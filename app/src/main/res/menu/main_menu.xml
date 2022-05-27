@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/baseHomeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/baseVideoFragment"
+        android:title="Video"
+        android:icon="@drawable/ic_video"/>
+    <item
+        android:id="@+id/baseTvFragment2"
+        android:title="TV"
+        android:icon="@drawable/ic_tv"/>
+    <item
+        android:id="@+id/baseRadioFragment"
+        android:title="Radio"
+        android:icon="@drawable/ic_radio"/>
+    <item
+        android:id="@+id/baseMoreFragment"
+        android:title="More"
+        android:icon="@drawable/ic_more"/>
+</menu>

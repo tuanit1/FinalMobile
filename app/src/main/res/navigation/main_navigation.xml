@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/baseHomeFragment">
+
+    <fragment
+        android:id="@+id/baseHomeFragment"
+        android:name="com.example.finalmobile.fragments.BaseHomeFragment"
+        android:label="fragment_base_home"
+        tools:layout="@layout/fragment_base_home" />
+    <fragment
+        android:id="@+id/baseVideoFragment"
+        android:name="com.example.finalmobile.fragments.BaseVideoFragment"
+        android:label="fragment_base_video"
+        tools:layout="@layout/fragment_base_video" />
+    <fragment
+        android:id="@+id/baseRadioFragment"
+        android:name="com.example.finalmobile.fragments.baseRadioFragment"
+        android:label="fragment_base_radio"
+        tools:layout="@layout/fragment_base_radio" />
+    <fragment
+        android:id="@+id/baseTvFragment2"
+        android:name="com.example.finalmobile.fragments.BaseTvFragment"
+        android:label="fragment_base_tv"
+        tools:layout="@layout/fragment_base_tv" />
+    <fragment
+        android:id="@+id/baseMoreFragment"
+        android:name="com.example.finalmobile.fragments.BaseMoreFragment"
+        android:label="fragment_base_more"
+        tools:layout="@layout/fragment_base_more" />
+    >
+</navigation>

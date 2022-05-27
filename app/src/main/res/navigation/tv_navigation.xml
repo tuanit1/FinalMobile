@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_navigation"
+    app:startDestination="@id/tvFragment">
+    <fragment
+        android:id="@+id/tvFragment"
+        android:name="com.example.finalmobile.fragments.TvFragment"
+        android:label="fragment_tv"
+        tools:layout="@layout/fragment_tv">
+        <action
+            android:id="@+id/fromTVToDetail"
+            app:destination="@id/tvDeltailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvDeltailFragment2"
+        android:name="com.example.finalmobile.fragments.TvDetailFragment"
+        android:label="fragment_tv_deltail"
+        tools:layout="@layout/fragment_tv_deltail" >
+        <action
+            android:id="@+id/fromDetailtoTVFrag"
+            app:destination="@id/tvFragment" />
+    </fragment>
+</navigation>

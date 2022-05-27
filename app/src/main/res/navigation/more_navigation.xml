@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/more_navigation"
+    app:startDestination="@id/moreFragment2">
+
+    <fragment
+        android:id="@+id/moreFragment2"
+        android:name="com.example.finalmobile.fragments.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" >
+        <action
+            android:id="@+id/more_to_favorite"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/more_to_privacy"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/more_to_update"
+            app:destination="@id/updateProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.finalmobile.fragments.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/favorite_to_more"
+            app:destination="@id/moreFragment2" />
+        <action
+            android:id="@+id/favorite_to_tv_detail"
+            app:destination="@id/tvDetailFragment" />
+        <action
+            android:id="@+id/favorite_to_video_detail"
+            app:destination="@id/videoDetailFragment3" />
+        <action
+            android:id="@+id/favorite_to_radio_detail"
+            app:destination="@id/radioDetailsFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.example.finalmobile.fragments.PrivacyFragment"
+        android:label="fragment_privacy"
+        tools:layout="@layout/fragment_privacy" >
+        <action
+            android:id="@+id/privacy_to_more"
+            app:destination="@id/moreFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoDetailFragment3"
+        android:name="com.example.finalmobile.fragments.VideoDetailFragment"
+        android:label="fragment_video_detail"
+        tools:layout="@layout/fragment_video_detail" >
+        <action
+            android:id="@+id/video_detail_to_favorite"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvDetailFragment"
+        android:name="com.example.finalmobile.fragments.TvDetailFragment"
+        android:label="fragment_tv_deltail"
+        tools:layout="@layout/fragment_tv_deltail" >
+        <action
+            android:id="@+id/tv_detail_to_favorite"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/radioDetailsFragment4"
+        android:name="com.example.finalmobile.fragments.RadioDetailsFragment"
+        android:label="fragment_radio_details"
+        tools:layout="@layout/fragment_radio_details" >
+        <action
+            android:id="@+id/radio_detail_to_favorite"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateProfileFragment"
+        android:name="com.example.finalmobile.fragments.UpdateProfileFragment"
+        android:label="fragment_update_profile"
+        tools:layout="@layout/fragment_update_profile" >
+        <action
+            android:id="@+id/update_to_more"
+            app:destination="@id/moreFragment2" />
+    </fragment>
+</navigation>

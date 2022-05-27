@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_navigation"
+    app:startDestination="@id/videoFragment2">
+
+    <fragment
+        android:id="@+id/videoFragment2"
+        android:name="com.example.finalmobile.fragments.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" >
+        <action
+            android:id="@+id/VideoToDetail"
+            app:destination="@id/videoDetailFragment" />
+        <action
+            android:id="@+id/VideoToSearchVideo"
+            app:destination="@id/searchVideoFragment" />
+        <action
+            android:id="@+id/VideoToDailymotionSearch"
+            app:destination="@id/dailymotionSearchFragment" />
+        <action
+            android:id="@+id/VideoToYoutubeSearch"
+            app:destination="@id/youtubeSearchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoDetailFragment"
+        android:name="com.example.finalmobile.fragments.VideoDetailFragment"
+        android:label="fragment_video_detail"
+        tools:layout="@layout/fragment_video_detail" >
+        <action
+            android:id="@+id/DetailVideoToVideo"
+            app:destination="@id/videoFragment2" />
+        <action
+            android:id="@+id/detail_to_cmtFrag"
+            app:destination="@id/cmtVideoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchVideoFragment"
+        android:name="com.example.finalmobile.fragments.SearchVideoFragment"
+        android:label="fragment_search_video"
+        tools:layout="@layout/fragment_search_video" >
+        <action
+            android:id="@+id/searchVideoBackToVideo"
+            app:destination="@id/videoFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/cmtVideoFragment"
+        android:name="com.example.finalmobile.fragments.CmtVideoFragment"
+        android:label="fragment_cmt_video"
+        tools:layout="@layout/fragment_cmt_video" >
+        <action
+            android:id="@+id/cmt_to_detail_Frag"
+            app:destination="@id/videoDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dailymotionSearchFragment"
+        android:name="com.example.finalmobile.fragments.DailymotionSearchFragment"
+        android:label="DailymotionSearchFragment" >
+        <action
+            android:id="@+id/DailymotionSearchBackToVideo"
+            app:destination="@id/videoFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/youtubeSearchFragment"
+        android:name="com.example.finalmobile.fragments.YoutubeSearchFragment"
+        android:label="fragment_youtube_search"
+        tools:layout="@layout/fragment_youtube_search" >
+        <action
+            android:id="@+id/YoutubeSearchBackToVideo"
+            app:destination="@id/videoFragment2" />
+    </fragment>
+</navigation>
