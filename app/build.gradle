@@ -14,14 +14,13 @@ plugins {
     id 'com.google.gms.google-services'
 }
 
-
 android {
-    compileSdk 32
+    compileSdk 31
 
     defaultConfig {
-        applicationId "com.example.finalmobile"
+        applicationId "com.naosteam.watchvideoapp"
         minSdk 21
-        targetSdk 32
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 
@@ -33,17 +32,25 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        benchmark {
+            signingConfig signingConfigs.debug
+            debuggable false
+        }
     }
 
     buildFeatures {
         viewBinding true
     }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+
 }
+
+
+
 
 dependencies {
 

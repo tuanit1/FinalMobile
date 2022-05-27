@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
+        <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/fragment_base_home.xml" value="0.2359375" />
+        <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/fragment_base_more.xml" value="0.2359375" />
         <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/menu/menu_speed.xml" value="0.24635416666666668" />
       </map>
     </option>
