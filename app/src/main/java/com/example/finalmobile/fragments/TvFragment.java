@@ -17,21 +17,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.example.finalmobile.R;
-import com.example.finalmobile.activities.MainActivity;
-import com.example.finalmobile.adapters.CateTvFragmentAdapter;
-import com.example.finalmobile.adapters.TVFragmentAdapter;
-import com.example.finalmobile.asynctasks.LoadTVAsync;
-import com.example.finalmobile.asynctasks.LoadVideoAsync;
+
 import com.example.finalmobile.databinding.FragmentTvBinding;
-import com.example.finalmobile.listeners.LoadTVAsyncListener;
-import com.example.finalmobile.listeners.LoadVideoAsyncListener;
-import com.example.finalmobile.listeners.OnHomeItemClickListeners;
-import com.example.finalmobile.models.Category_M;
-import com.example.finalmobile.models.Videos_M;
-import com.example.finalmobile.utils.Constant;
-import com.example.finalmobile.utils.Methods;
-import com.example.finalmobile.utils.SharedPref;
 
 import org.checkerframework.checker.units.qual.A;
 

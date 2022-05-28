@@ -22,35 +22,19 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.google.android.exoplayer2.ExoPlayer;
-import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.google.android.exoplayer2.ui.PlayerControlView;
-import com.google.android.exoplayer2.ui.StyledPlayerControlView;
-import com.google.firebase.auth.FirebaseAuth;
-import com.example.finalmobile.R;
-import com.example.finalmobile.activities.MainActivity;
-import com.example.finalmobile.asynctasks.ExecuteQueryAsync;
-import com.example.finalmobile.databinding.FragmentTvDeltailBinding;
-import com.example.finalmobile.listeners.CheckFavListener;
-import com.example.finalmobile.listeners.ExecuteQueryAsyncListener;
-import com.example.finalmobile.listeners.OnHomeItemClickListeners;
-import com.example.finalmobile.listeners.SetFavListener;
-import com.example.finalmobile.utils.Methods;
-import com.squareup.picasso.Picasso;
+import com.example.finalmobile.databinding.FragmentTvDetailBinding;
 
 import okhttp3.RequestBody;
 
 public class TvDetailFragment extends Fragment {
 
-    private FragmentTvDeltailBinding binding;
+    private FragmentTvDetailBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        binding = FragmentTvDeltailBinding.inflate(inflater, container, false);
+        binding = FragmentTvDetailBinding.inflate(inflater, container, false);
         View rootView = binding.getRoot();
 
         return rootView;

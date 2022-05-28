@@ -12,18 +12,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SearchView;
 
-import com.example.finalmobile.R;
-import com.example.finalmobile.adapters.ViewPagerAdapter;
 import com.example.finalmobile.databinding.FragmentFavoriteBinding;
-import com.example.finalmobile.listeners.FavoriteToDetailListener;
+;
 
 public class FavoriteFragment extends Fragment {
 
-    private ViewPagerAdapter viewPagerAdapter;
     private View rootView;
     private NavController navController;
     private FragmentFavoriteBinding binding;
-    private FavoriteToDetailListener listener;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

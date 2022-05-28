@@ -21,9 +21,6 @@
             android:configChanges="orientation|screenSize|layoutDirection"
             android:exported="true" />
         <activity
-            android:name=".activities.UpdateProfileGoogleActivity"
-            android:exported="true" />
-        <activity
             android:name=".activities.VideoPlayerActivity"
             android:configChanges="orientation|screenSize|layoutDirection"
             android:exported="true" />

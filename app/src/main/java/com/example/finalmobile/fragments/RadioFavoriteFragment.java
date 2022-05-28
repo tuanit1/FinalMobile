@@ -15,25 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.example.finalmobile.R;
-import com.example.finalmobile.adapters.RadioItemAdapter;
-import com.example.finalmobile.asynctasks.LoadFavoriteListAsync;
-import com.example.finalmobile.asynctasks.LoadRadioAsync;
-import com.example.finalmobile.asynctasks.LoadSearchVideoAsync;
-import com.example.finalmobile.asynctasks.LoadVideoAsync;
 import com.example.finalmobile.databinding.FragmentRadioFavoriteBinding;
-import com.example.finalmobile.databinding.FragmentVideoFavoriteBinding;
-import com.example.finalmobile.listeners.FavoriteToDetailListener;
-import com.example.finalmobile.listeners.LoadRadioAsyncListener;
-import com.example.finalmobile.listeners.LoadSearchVideoAsyncListener;
-import com.example.finalmobile.listeners.LoadVideoAsyncListener;
-import com.example.finalmobile.listeners.OnRadioClickListeners;
-import com.example.finalmobile.models.Category_M;
-import com.example.finalmobile.models.Videos_M;
-import com.example.finalmobile.utils.Constant;
-import com.example.finalmobile.utils.Methods;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 

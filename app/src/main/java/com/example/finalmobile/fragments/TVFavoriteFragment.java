@@ -1,4 +1,4 @@
-package com.naosteam.watchvideoapp.fragments;
+package com.example.finalmobile.fragments;
 
 import android.os.Bundle;
 
@@ -15,20 +15,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.naosteam.watchvideoapp.R;
-import com.naosteam.watchvideoapp.adapters.RadioItemAdapter;
-import com.naosteam.watchvideoapp.adapters.TVFragmentAdapter;
-import com.naosteam.watchvideoapp.asynctasks.LoadFavoriteListAsync;
-import com.naosteam.watchvideoapp.databinding.FragmentRadioFavoriteBinding;
-import com.naosteam.watchvideoapp.databinding.FragmentTVFavoriteBinding;
-import com.naosteam.watchvideoapp.listeners.FavoriteToDetailListener;
-import com.naosteam.watchvideoapp.listeners.LoadSearchVideoAsyncListener;
-import com.naosteam.watchvideoapp.listeners.OnHomeItemClickListeners;
-import com.naosteam.watchvideoapp.listeners.OnRadioClickListeners;
-import com.naosteam.watchvideoapp.models.Videos_M;
-import com.naosteam.watchvideoapp.utils.Constant;
-import com.naosteam.watchvideoapp.utils.Methods;
+import com.example.finalmobile.databinding.FragmentTVFavoriteBinding;
+
 
 import java.util.ArrayList;
 

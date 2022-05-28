@@ -15,16 +15,8 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.example.finalmobile.R;
-import com.example.finalmobile.adapters.FeaturedVideoAdapter;
-import com.example.finalmobile.asynctasks.LoadFavoriteListAsync;
+
 import com.example.finalmobile.databinding.FragmentVideoFavoriteBinding;
-import com.example.finalmobile.listeners.LoadSearchVideoAsyncListener;
-import com.example.finalmobile.listeners.OnVideoFeatureClickListener;
-import com.example.finalmobile.listeners.FavoriteToDetailListener;
-import com.example.finalmobile.models.Videos_M;
-import com.example.finalmobile.utils.Methods;
 
 import java.util.ArrayList;
 
