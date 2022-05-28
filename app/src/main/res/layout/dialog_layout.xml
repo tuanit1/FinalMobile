@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CE000000">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHeight_percent="0.5"
+        android:background="@drawable/bg_radio_listening_item">
+
+        <ImageView
+            android:id="@+id/ic_dialog_alert"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/alert_img"
+            app:layout_constraintBottom_toTopOf="@id/tv_dialog_alert"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_dialog_alert"
+            android:layout_width="372dp"
+            android:layout_height="135dp"
+            android:autoSizeMaxTextSize="21sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:text="If you log in with Google at the first time using app, this will be your only one account.\n If you want to use email+password and then Google, click Sign Up."
+            app:layout_constraintBottom_toTopOf="@+id/btn_next_su"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.38"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ic_dialog_alert" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/bg_radio_listening_item"
+            android:text="Google"
+            android:textColor="@color/neonGreen"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/check_dialog"
+            app:layout_constraintDimensionRatio="35:13"
+            app:layout_constraintEnd_toStartOf="@+id/btn_next_su"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_dialog_alert" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next_su"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/check_dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintDimensionRatio="35:13"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintStart_toEndOf="@id/btn_submit"
+            app:layout_constraintTop_toBottomOf="@id/tv_dialog_alert"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:text="sign up"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/bg_dialog_no"
+            />
+
+        <CheckBox
+            android:id="@+id/check_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Don't show this again"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:layout_marginTop="5dp"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintBottom_toTopOf="@+id/tv_dismiss"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_next_su"/>
+
+
+        <TextView
+            android:id="@+id/tv_dismiss"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Back to Login"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check_dialog"
+            android:gravity="center_horizontal"
+            app:layout_constraintHeight_percent="0.1"
+            android:textColor="@color/white"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
