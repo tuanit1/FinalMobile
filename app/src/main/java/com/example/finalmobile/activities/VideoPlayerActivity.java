@@ -45,7 +45,6 @@ public class VideoPlayerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setFullScreen();
         binding = ActivityVideoPlayerBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
