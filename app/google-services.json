@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "926715980598",
-    "firebase_url": "https://watch-video-app-ffbc5-default-rtdb.firebaseio.com",
-    "project_id": "watch-video-app-ffbc5",
-    "storage_bucket": "watch-video-app-ffbc5.appspot.com"
+    "project_number": "975912851186",
+    "firebase_url": "https://finalmobile-f0ad8-default-rtdb.firebaseio.com",
+    "project_id": "finalmobile-f0ad8",
+    "storage_bucket": "finalmobile-f0ad8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:926715980598:android:a59d36eb87757f36cea197",
+        "mobilesdk_app_id": "1:975912851186:android:123267c0b896f0fe2c626b",
         "android_client_info": {
-          "package_name": "com.naosteam.watchvideoapp"
+          "package_name": "com.example.finalmobile"
         }
       },
       "oauth_client": [
         {
-          "client_id": "926715980598-j5iggmr0dku0evoideimcpnu19tqsj95.apps.googleusercontent.com",
+          "client_id": "975912851186-gc7a7q2ee2tprnt09ikuor221d46fkj0.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.naosteam.watchvideoapp",
+            "package_name": "com.example.finalmobile",
             "certificate_hash": "8e596f8556a087fed0d3c8e32fd9c7174290e44f"
           }
         },
         {
-          "client_id": "926715980598-auv2peb952q15q4k58467pd50k4pqr7i.apps.googleusercontent.com",
+          "client_id": "975912851186-kedj6uvjf4k1tqftb6a3p6orl7f82f9l.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCTFBQ_z3STLK2OywybP6fmjXT90Ul5CjY"
+          "current_key": "AIzaSyDsf5drD-SsLVnlW39zwAXl_99E080F_fc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "926715980598-auv2peb952q15q4k58467pd50k4pqr7i.apps.googleusercontent.com",
+              "client_id": "975912851186-kedj6uvjf4k1tqftb6a3p6orl7f82f9l.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
