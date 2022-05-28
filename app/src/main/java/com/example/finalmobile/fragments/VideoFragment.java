@@ -25,19 +25,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.finalmobile.R;
-import com.example.finalmobile.adapters.FeaturedVideoAdapter;
-import com.example.finalmobile.adapters.HorizontalCategoryAdapter;
-import com.example.finalmobile.adapters.TrendingMoviePagerAdapter;
-import com.example.finalmobile.asynctasks.LoadVideoAsync;
 import com.example.finalmobile.databinding.FragmentVideoBinding;
-import com.example.finalmobile.listeners.LoadVideoAsyncListener;
-import com.example.finalmobile.listeners.OnCategoryHorizontalListener;
-import com.example.finalmobile.listeners.OnVideoFeatureClickListener;
 import com.example.finalmobile.models.Category_M;
 import com.example.finalmobile.models.Videos_M;
 import com.example.finalmobile.utils.Constant;
-import com.example.finalmobile.utils.Methods;
-import com.example.finalmobile.utils.SharedPref;
 
 import java.util.ArrayList;
 import java.util.Timer;
