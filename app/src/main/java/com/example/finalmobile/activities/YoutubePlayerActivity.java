@@ -19,7 +19,6 @@ public class YoutubePlayerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setFullScreen();
         setContentView(R.layout.activity_youtube_player);
     }
 

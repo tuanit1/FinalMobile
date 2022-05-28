@@ -21,7 +21,6 @@ public class DailymotionPlayerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setFullScreen();
         binding = ActivityDailymotionPlayerBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
