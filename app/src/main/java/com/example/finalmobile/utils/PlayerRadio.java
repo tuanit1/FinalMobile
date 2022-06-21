@@ -1,11 +1,13 @@
 package com.example.finalmobile.utils;
 
 import android.content.Context;
+import android.view.View;
 
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.MediaItem;
 import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.ui.PlayerView;
+import com.example.finalmobile.R;
 import com.example.finalmobile.listeners.OnUpdateViewRadioPlayListener;
 
 public class PlayerRadio {

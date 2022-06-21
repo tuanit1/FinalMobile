@@ -17,9 +17,12 @@
         <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/activity_update_profile_google.xml" value="0.1" />
         <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/dialog_layout.xml" value="0.1" />
+        <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/dialog_report_landscape_layout.xml" value="0.1" />
+        <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/dialog_report_layout.xml" value="0.1" />
         <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/fragment_radio.xml" value="0.1" />
         <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/fragment_radio_cat_item.xml" value="0.1" />
         <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/fragment_radio_details.xml" value="0.1" />
+        <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/layout_dialog_quit.xml" value="0.21510416666666668" />
       </map>
     </option>
   </component>
