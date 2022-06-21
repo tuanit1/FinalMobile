@@ -29,6 +29,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.navigation.NavigationView;
 import com.example.finalmobile.R;
+import com.example.finalmobile.listeners.OnUpdateViewRadioPlayListener;
+import com.example.finalmobile.utils.PlayerRadio;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
 
         PlayerRadio.setContext(MainActivity.this);
         navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
-
             @Override
             public void onDestinationChanged(@NonNull NavController navController, @NonNull NavDestination navDestination, @Nullable Bundle bundle) {
                 if(navDestination.getId() != R.id.baseRadioFragment){
@@ -76,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
 
 
