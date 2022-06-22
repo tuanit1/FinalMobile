@@ -22,7 +22,18 @@ public class PrivacyFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentPrivacyBinding.inflate(inflater, container, false);
         rootView = binding.getRoot();
-        
+        navController = NavHostFragment.findNavController(this);
+
+        binding.imvBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.privacy_to_more);
+            }
+        });
+
+        binding.webviewPrivacy.getSettings().setJavaScriptEnabled(true);
+        binding.webviewPrivacy.loadUrl("file:///android_asset/"+"privacy.html");
+
         return rootView;
     }
 
