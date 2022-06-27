@@ -1,4 +1,4 @@
-package com.naosteam.watchvideoapp.listeners;
+package com.example.finalmobile.listeners;
 
 public interface CheckRatingAsyncListener {
     void onStart();

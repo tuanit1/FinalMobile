@@ -1,14 +1,10 @@
 package com.example.finalmobile.fragments;
 
-import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
-import android.os.SystemClock;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,20 +18,17 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.finalmobile.databinding.FragmentTvDetailBinding;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.MediaItem;
 import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.ui.PlayerControlView;
-import com.google.android.exoplayer2.ui.StyledPlayerControlView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.example.finalmobile.R;
 import com.example.finalmobile.activities.MainActivity;
 import com.example.finalmobile.asynctasks.ExecuteQueryAsync;
-import com.example.finalmobile.databinding.FragmentTvDeltailBinding;
 import com.example.finalmobile.listeners.CheckFavListener;
 import com.example.finalmobile.listeners.ExecuteQueryAsyncListener;
-import com.example.finalmobile.listeners.OnHomeItemClickListeners;
 import com.example.finalmobile.listeners.SetFavListener;
 import com.example.finalmobile.utils.Methods;
 import com.squareup.picasso.Picasso;
@@ -44,7 +37,7 @@ import okhttp3.RequestBody;
 
 public class TvDetailFragment extends Fragment {
 
-    private FragmentTvDeltailBinding binding;
+    private FragmentTvDetailBinding binding;
     private NavController navController;
     private ExoPlayer player;
     private Boolean mIsFav = false;
@@ -55,7 +48,7 @@ public class TvDetailFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        binding = FragmentTvDeltailBinding.inflate(inflater, container, false);
+        binding = FragmentTvDetailBinding.inflate(inflater, container, false);
         View rootView = binding.getRoot();
         bundle = getArguments();
         id = bundle.getInt("id");
@@ -207,14 +200,19 @@ public class TvDetailFragment extends Fragment {
         binding.imgreport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showReportDialog();
+                if (FirebaseAuth.getInstance().getCurrentUser()!=null){
+                    showReportDialog();
+                }
+                else{
+                    Toast.makeText(getContext(), "Please login first!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
 
     private void showReportDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-        View view1 = LayoutInflater.from(getContext()).inflate(R.layout.dialog_report_layout, null,false);
+        View view1 = LayoutInflater.from(getContext()).inflate(R.layout.dialog_report_landscape_layout, null,false);
         builder.setView(view1);
         builder.setCancelable(false);
 
@@ -261,6 +259,7 @@ public class TvDetailFragment extends Fragment {
                     ExecuteQueryAsync async = new ExecuteQueryAsync(requestBody, listener);
                     async.execute();
                     alertDialog.dismiss();
+                    Toast.makeText(getContext(), "Thank you for your report!", Toast.LENGTH_SHORT).show();
                 }
             });
 

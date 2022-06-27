@@ -18,10 +18,17 @@ import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.example.finalmobile.R;
+import com.example.finalmobile.adapters.RadioItemAdapter;
+import com.example.finalmobile.asynctasks.LoadRadioCatItemAsync;
 import com.example.finalmobile.databinding.FragmentRadioCatItemBinding;
+import com.example.finalmobile.listeners.ControlRadioListener;
+import com.example.finalmobile.listeners.LoadRadioCatItemAsyncListener;
+import com.example.finalmobile.listeners.OnRadioClickListeners;
+import com.example.finalmobile.listeners.OnUpdateViewRadioPlayListener;
 import com.example.finalmobile.models.Category_M;
 import com.example.finalmobile.models.Videos_M;
 import com.example.finalmobile.utils.Constant;
+import com.example.finalmobile.utils.Methods;
 import com.example.finalmobile.utils.PlayerRadio;
 import com.squareup.picasso.Picasso;
 
@@ -193,16 +200,15 @@ public class RadioCatItemFragment extends Fragment {
                     Bundle bundle = new Bundle();
                     bundle.putSerializable("category", cat);
                     RadioDetailsFragment.setControlRadioListener(new ControlRadioListener() {
-                                                                     @Override
-                                                                     public void onNext() {
-                                                                         nextRadio();
-                                                                     }
-                                                                     @Override
-                                                                     public void onPrevious() {
-                                                                         previousRadio();
-                                                                     }
-                                                                 }
-                    );
+                        @Override
+                        public void onNext() {
+                            nextRadio();
+                        }
+                        @Override
+                        public void onPrevious() {
+                            previousRadio();
+                        }
+                    });
                     bundle.putString("from","from_cat_item");
                     navController.navigate(R.id.radio_cat_item_to_radio_detail, bundle);
                 }

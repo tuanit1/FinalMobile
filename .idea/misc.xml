@@ -5,24 +5,25 @@
       <map>
         <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
         <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/activity_video_player.xml" value="0.14114583333333333" />
+        <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/category_tv_fragment_item.xml" value="0.1859375" />
         <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/custom_exo_play_view.xml" value="0.14114583333333333" />
         <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/custom_prg_radio_detail.xml" value="0.14114583333333333" />
+        <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/dialog_rating_layout.xml" value="0.1859375" />
         <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/fragment_base_home.xml" value="0.2359375" />
         <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/fragment_base_more.xml" value="0.2359375" />
+        <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/fragment_imgslide_home_frag_item.xml" value="0.1859375" />
         <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/fragment_tv deltail.xml" value="0.3145833333333333" />
         <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/fragment_tv.xml" value="0.3145833333333333" />
+        <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/layout/item_category_horizontal.xml" value="0.3145833333333333" />
         <entry key="..\:/WORK/Android Project/FinalMobile/app/src/main/res/menu/menu_speed.xml" value="0.24635416666666668" />
         <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/activity_forgot_pass.xml" value="0.1" />
         <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/activity_login.xml" value="0.21666666666666667" />
         <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/activity_update_profile_google.xml" value="0.1" />
         <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/dialog_layout.xml" value="0.1" />
-        <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/dialog_report_landscape_layout.xml" value="0.1" />
-        <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/dialog_report_layout.xml" value="0.1" />
         <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/fragment_radio.xml" value="0.1" />
         <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/fragment_radio_cat_item.xml" value="0.1" />
         <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/fragment_radio_details.xml" value="0.1" />
-        <entry key="..\:/Work/FinalMobile/app/src/main/res/layout/layout_dialog_quit.xml" value="0.21510416666666668" />
       </map>
     </option>
   </component>
